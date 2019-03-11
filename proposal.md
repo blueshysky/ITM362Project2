@@ -11,7 +11,7 @@
   Shared Repo - https://github.com/mattypaddypizza/ITM362Project2
   Matt's Repo - https://github.com/mmhofmann1/ITM362Project2
   Devonald's Repo -
-  Vincent's Repo -
+  Vincent's Repo -https://github.com/blueshysky/ITM362Project2
   Lucas's Repo -
 
   We will be communicating through discord

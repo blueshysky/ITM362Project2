@@ -12,6 +12,6 @@
   Matt's Repo - https://github.com/mmhofmann1/ITM362Project2
   Devonald's Repo - https://github.com/dmanney/ITM362Project2
   Vincent's Repo -https://github.com/blueshysky/ITM362Project2
-  Lucas's Repo - 
+  Lucas's Repo - https://github.com/LucasBrancato/IIT_WebDev-362_Project2
 
   We will be communicating through discord

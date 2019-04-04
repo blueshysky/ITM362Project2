@@ -15,11 +15,13 @@ html {
 /* Header Styles */
 #logo {
   max-width: 80%;
+  align-self: flex-start;
+  background-color: #024602;
 }
 
 #fig {
   display: flex;
-  background-color: #024602
+  font: 1.2em "Keilla";
 }
 
 #dropdown {
@@ -37,15 +39,21 @@ html {
 }
 
 .dropcontent {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  text-align: right;
+  background-color: #024602
 }
 
-.dropmenu a{
+.dropcontent a {
 color: black;
 display: block;
-padding: 5%;
+padding: 30% 0%;
 text-align: left;
+text-decoration: none;
 background-color: #831B1B;
 width: 7em;
+}
+
+.dropcontent a:hover {
+  background-color: #AA3C3C;
 }

@@ -22,11 +22,16 @@ html {
   background-color: #024602
 }
 
-#dropdown {
+.dropdown {
   padding: 0 0 0 0;
   width: 5em;
   height: 5em;
   background-color: #AA3C3C;
   border: none;
   cursor: pointer;
+  color: black;
+}
+
+.dropdown:hover {
+  background-color: #831B1B;
 }

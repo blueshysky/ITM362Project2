@@ -22,10 +22,10 @@ html {
   background-color: #024602
 }
 
-.dropdown {
+#dropdown {
   padding: 0 0 0 0;
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 6em;
   background-color: #AA3C3C;
   border: none;
   cursor: pointer;
@@ -34,4 +34,18 @@ html {
 
 .dropdown:hover {
   background-color: #831B1B;
+}
+
+.dropcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropmenu a{
+color: black;
+display: block;
+padding: 5%;
+text-align: left;
+background-color: #831B1B;
+width: 7em;
 }

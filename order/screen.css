@@ -34,19 +34,19 @@ html {
   color: black;
 }
 
-.dropdown:hover {
+#dropdown:hover {
   background-color: #831B1B;
 }
 
 .dropcontent {
   display: inline-block;
   text-align: right;
-  background-color: #024602
+  background-color: #024602;
 }
 
 .dropcontent a {
+display: none;
 color: black;
-display: block;
 padding: 30% 0%;
 text-align: left;
 text-decoration: none;
@@ -56,4 +56,20 @@ width: 7em;
 
 .dropcontent a:hover {
   background-color: #AA3C3C;
+}
+
+.visible {
+display: inline-block;
+text-align: right;
+background-color: #024602;
+}
+
+.visible a {
+display: block;
+color: black;
+padding: 30% 0%;
+text-align: left;
+text-decoration: none;
+background-color: #831B1B;
+width: 7em;
 }

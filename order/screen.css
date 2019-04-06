@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Base Styles */
+html {
+  background-color: #56A556;
+  height: 100%;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+h1 {
+  font: 2.5em "Keilla";
+  color: #88001B;
+}
+
+/* Header Styles */
+#logo {
+  max-width: 80%;
+  align-self: flex-start;
+  background-color: #024602;
+}
+
+#fig {
+  display: flex;
+  font: 1.2em "Keilla";
+}
+
+#dropdown {
+  padding: 0 0 0 0;
+  width: 7em;
+  height: 6em;
+  background-color: #AA3C3C;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+#dropdown:hover {
+  background-color: #831B1B;
+}
+
+.dropcontent {
+  display: inline-block;
+  text-align: right;
+  background-color: #024602;
+  width: 100%;
+}
+
+.dropcontent a {
+display: none;
+}
+
+.dropcontent a:hover {
+  background-color: #AA3C3C;
+}
+
+.visible {
+display: inline-block;
+text-align: right;
+background-color: #024602;
+}
+
+.visible a {
+display: block;
+color: black;
+padding: 30% 0%;
+text-align: left;
+text-decoration: none;
+background-color: #831B1B;
+width: 6em;
+}
+
+/* Body Style */
+#special {
+  display: block;
+  width: 100%;
+  border: 0.1em solid #024602;
+  padding: 6%;
+  font-size: 1.2em;
+  background-color: #56A556;
+  cursor: pointer;
+  color: #88001B;
+}
+
+#special::after {
+  content: '▼';
+  float: right;
+}
+
+#build {
+  display: block;
+  width: 100%;
+  border: 0.1em solid #024602;
+  padding: 6%;
+  font-size: 1.2em;
+  background-color: #56A556;
+  cursor: pointer;
+  color: #88001B;
+  border-top: none;
+}
+
+#build::after {
+  content: '▼';
+  float: right;
+}
+
+.pizzas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pizzas img {
+  max-width: 40%;
+}
+
+#cheese {
+  order: 1;
+}
+
+#deluxe {
+  order: 2;
+}
+
+#meat {
+  order: 5;
+}
+
+#bbq {
+  order: 6;
+}
+#cc {
+  order: 3;
+}
+
+#dc {
+  order: 4;
+}
+
+#mc {
+  order: 7;
+}
+
+#bc {
+  order: 8;
+}

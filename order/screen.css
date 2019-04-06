@@ -12,6 +12,15 @@ html {
   height: 100%;
 }
 
+button::-moz-focus-inner {
+  border: 0;
+}
+
+h1 {
+  font: 2.5em "Keilla";
+  color: #88001B;
+}
+
 /* Header Styles */
 #logo {
   max-width: 80%;
@@ -42,16 +51,11 @@ html {
   display: inline-block;
   text-align: right;
   background-color: #024602;
+  width: 100%;
 }
 
 .dropcontent a {
 display: none;
-color: black;
-padding: 30% 0%;
-text-align: left;
-text-decoration: none;
-background-color: #831B1B;
-width: 7em;
 }
 
 .dropcontent a:hover {
@@ -71,5 +75,80 @@ padding: 30% 0%;
 text-align: left;
 text-decoration: none;
 background-color: #831B1B;
-width: 7em;
+width: 6em;
+}
+
+/* Body Style */
+#special {
+  display: block;
+  width: 100%;
+  border: 0.1em solid #024602;
+  padding: 6%;
+  font-size: 1.2em;
+  background-color: #56A556;
+  cursor: pointer;
+  color: #88001B;
+}
+
+#special::after {
+  content: '▼';
+  float: right;
+}
+
+#build {
+  display: block;
+  width: 100%;
+  border: 0.1em solid #024602;
+  padding: 6%;
+  font-size: 1.2em;
+  background-color: #56A556;
+  cursor: pointer;
+  color: #88001B;
+  border-top: none;
+}
+
+#build::after {
+  content: '▼';
+  float: right;
+}
+
+.pizzas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pizzas img {
+  max-width: 40%;
+}
+
+#cheese {
+  order: 1;
+}
+
+#deluxe {
+  order: 2;
+}
+
+#meat {
+  order: 5;
+}
+
+#bbq {
+  order: 6;
+}
+#cc {
+  order: 3;
+}
+
+#dc {
+  order: 4;
+}
+
+#mc {
+  order: 7;
+}
+
+#bc {
+  order: 8;
 }

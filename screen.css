@@ -22,6 +22,14 @@ body{
   overflow:hidden;
 }
 
+.navClass > ul > li{
+  position:relative;
+}
+
+header ul {
+  list-style: none;
+}
+
 /* Header */
 header{
   background:#580303;

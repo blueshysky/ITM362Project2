@@ -5,3 +5,73 @@
 /* stylelint-disable*/
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height:2.0;
+  padding:0;
+  margin:0;
+  background-color:#024602;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+/* Header */
+header{
+  background:#580303;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height:70px;
+  border-bottom:#350000 6px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+  font-size:32px;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:left;
+  margin-top:20px;
+}
+
+header .highlight, header .current a{
+  color:#2F882F;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#002A00;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  /*background:url('./images/hanklogo.png') no-repeat 0 -15px;*/
+  text-align:center;
+  color:#ffffff;
+}

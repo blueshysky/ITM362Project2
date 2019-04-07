@@ -6,51 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Hanks Pizzaria</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-  <!--custom styles-->
-  <link href="css/screen.css" rel="stylesheet">
+  <link href="screen.css" rel="stylesheet">
 </head>
 
 <body>
-  <!--Navbar via MDB-->
-  <nav class="navbar navbar-expand-lg">
+  <header>
+	<div class="container">
+	  <div id="branding">
+		<h1><span class="highlight">Hanks Pizzaria</span></h1>
+		<img src="./images/pizzalogo.png">
+	  </div>
+	  <!--Navbar via MDB-->
+	  <nav>
+		<!-- Links -->
+		<ul>
+		
+			<li class="current"><a href="./index.html">Home</a></li>
+			<li><a href="./pizzas.html">Pizzas</a></li>
+			<li><a href="./salads.html">Salads</a></li>
+			<li><a href="./appetizers.html">Appetizers</a></li>
+			<li><a href="./drinks.html">Drinks</a></li>
+			<li><a href="./deserts.html">Deserts</a></li>
+			
+		</ul>
 
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">
-      <img src="./img/navLogo.png">
-    </a>
+	  </nav>
+	</div>
+  </header>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-	  
-        <li class="nav-item">
-		  <a class="nav-item" href="./index.html">Home</a>
-		  <a class="nav-item" href="./pizzas.html">Pizzas</a>
-          <a class="nav-item" href="./salads.html">Salads</a>
-	      <a class="nav-item" href="./appetizers.html">Appetizers</a>
-		  <a class="nav-item" href="./drinks.html">Drinks</a>
-          <a class="nav-item" href="./deserts.html">Deserts</a>
-        </li>
-        
-      </ul>
-
-  </nav>
-  <!--/.Navbar-->
-
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
+  <section id="showcase"> 
+    <div class="container">
 
 	  <img src="./images/hanklogo.png" alt="Logo">
       <h5 class="animated fadeIn mb-3">Thank you for using our product. Come back soon for more content!</h5>
 
       <p class="animated fadeIn text-muted">Hanks Pizzaria</p>
     </div>
-  </div>
-
+  </section>
+  <script src="site.js"></script>
 </body>
 
 </html>

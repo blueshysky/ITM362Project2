@@ -62,3 +62,16 @@ header .highlight, header .current a{
   color:#2F882F;
   font-weight:bold;
 }
+
+header a:hover{
+  color:#002A00;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  /*background:url('./images/hanklogo.png') no-repeat 0 -15px;*/
+  text-align:center;
+  color:#ffffff;
+}

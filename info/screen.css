@@ -49,6 +49,7 @@ body{
   font-weight:bold;
 }
 
+/*tab styling*/
 
 #content li label {
   background-color: #EEEEEE;
@@ -68,4 +69,25 @@ body{
   padding: 5em  3em  3em  3em;
   display: flex;
   flex-direction: row;
+}
+
+#tab1 label:hover {
+  cursor: pointer;
+  color:#002A00;
+  font-weight:bold;
+}
+
+#tab2 label:hover {
+  cursor: pointer;
+  color:#002A00;
+  font-weight:bold;
+}
+
+/*Content revealing*/
+#summary_content {
+  display: none;
+}
+
+#payment_content {
+  display: none;
 }

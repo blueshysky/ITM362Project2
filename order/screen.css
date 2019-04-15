@@ -126,6 +126,10 @@ width: 6em;
   max-width: 40%;
 }
 
+.pizzas button {
+  width:40%;
+}
+
 .pizzas p {
  width: 40%;
  padding: 1%;
@@ -139,10 +143,10 @@ width: 6em;
   order: 2;
 }
 #meat {
-  order: 9;
+  order: 11;
 }
 #bbq {
-  order: 10;
+  order: 12;
 }
 #cc {
   order: 3;
@@ -151,10 +155,10 @@ width: 6em;
   order: 4;
 }
 #mc {
-  order: 11;
+  order: 13;
 }
 #bc {
-  order: 12;
+  order: 14;
 }
 #cd {
   order: 5;
@@ -163,45 +167,97 @@ width: 6em;
   order: 6;
 }
 #md {
-  order: 13;
-}
-#bd{
-  order: 14;
-}
-#add1 {
-  order: 7;
-}
-#add2 {
-  order: 8;
-}
-#add3 {
   order: 15;
 }
-#add4 {
+#bd{
   order: 16;
+}
+#size2 {
+  order: 7;
+  padding-right: 20%;
+}
+#size2 input {
+  float: left;
+}
+#size2 label {
+  float: left;
+}
+#size2 label + input {
+  clear: both;
+}
+#size3 {
+  order: 8;
+}
+#size3 input {
+  float: left;
+}
+#size3 label {
+  float: left;
+}
+#size3 label + input {
+  clear: both;
+}
+#size4 {
+  order: 17;
+  padding-right: 20%;
+}
+#size4 input {
+  float: left;
+}
+#size4 label {
+  float: left;
+}
+#size4 label + input {
+  clear: both;
+}
+#size5 {
+  order: 18;
+}
+#size5 input {
+  float: left;
+}
+#size5 label {
+  float: left;
+}
+#size5 label + input {
+  clear: both;
+}
+#add1 {
+  order: 9;
+}
+#add2 {
+  order: 10;
+}
+#add3 {
+  order: 19;
+}
+#add4 {
+  order: 20;
 }
 .builds {
   display: none;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 #buildc {
   max-width: 95%;
-  padding: 1% 0 0 0;
+  padding: 1% 0 0 2.5%;
   order: 1;
 }
-
-#meat1 {
+#size1 {
   order: 2;
 }
-#meat2{
+#meat1 {
   order: 3;
 }
-#veg1 {
+#meat2{
   order: 4;
 }
-#veg2 {
+#veg1 {
   order: 5;
+}
+#veg2 {
+  order: 6;
 }
 
 .visible3 {

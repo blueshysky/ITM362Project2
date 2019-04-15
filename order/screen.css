@@ -8,7 +8,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Base Styles */
 html {
-  background-color: #56A556;
+  background-color: white;
   height: 100%;
 }
 
@@ -23,61 +23,15 @@ h1 {
 
 /* Header Styles */
 #logo {
-  max-width: 80%;
+  max-width: 100%;
   align-self: flex-start;
-  background-color: #024602;
+  background-color: #56A556;
 }
 
 #fig {
   display: flex;
   font: 1.2em "Keilla";
 }
-
-#dropdown {
-  padding: 0 0 0 0;
-  width: 7em;
-  height: 6em;
-  background-color: #AA3C3C;
-  border: none;
-  cursor: pointer;
-  color: black;
-}
-
-#dropdown:hover {
-  background-color: #831B1B;
-}
-
-.dropcontent {
-  display: inline-block;
-  text-align: right;
-  background-color: #024602;
-  width: 100%;
-}
-
-.dropcontent a {
-display: none;
-}
-
-.dropcontent a:hover {
-  background-color: #AA3C3C;
-}
-
-.visible {
-display: inline-block;
-text-align: right;
-background-color: #024602;
-}
-
-.visible a {
-display: block;
-color: black;
-padding: 30% 0%;
-text-align: left;
-text-decoration: none;
-background-color: #831B1B;
-width: 6em;
-}
-
 /* Body Style */
 #special {
   display: block;
@@ -85,10 +39,9 @@ width: 6em;
   border: 0.1em solid #024602;
   padding: 6%;
   font-size: 1.2em;
-  background-color: #56A556;
+  background-color: white;
   cursor: pointer;
   color: #88001B;
-  border-bottom: none;
 }
 
 #special::after {
@@ -102,7 +55,7 @@ width: 6em;
   border: 0.1em solid #024602;
   padding: 6%;
   font-size: 1.2em;
-  background-color: #56A556;
+  background-color: white;
   cursor: pointer;
   color: #88001B;
 }
@@ -241,7 +194,7 @@ width: 6em;
 }
 #buildc {
   max-width: 95%;
-  padding: 1% 0 0 2.5%;
+  padding: 0 0 0 2.5%;
   order: 1;
 }
 #size1 {

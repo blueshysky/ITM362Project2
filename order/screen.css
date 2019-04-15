@@ -24,14 +24,25 @@ h1 {
 /* Header Styles */
 #logo {
   max-width: 100%;
-  align-self: flex-start;
   background-color: #56A556;
 }
 
 #fig {
   display: flex;
+  flex-direction: column;
   font: 1.2em "Keilla";
+  background-color: #56A556;
 }
+
+#navlinks ul li{
+  display: inline;
+  padding: 10%;
+}
+
+#navlinks a {
+  text-decoration: none;
+}
+
 /* Body Style */
 #special {
   display: block;

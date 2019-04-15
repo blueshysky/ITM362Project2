@@ -13,14 +13,13 @@
     <img id="logo" src="/images/hanklogo.png"
     alt="Hank's Pizzaria Logo"
     title="Hank's Pizzaria Logo" />
-    <section class="dropcontent">
-      <button id="dropdown">Menu</button>
-      <a href="">Pizzas</a>
-      <a href="">Appetizers</a>
-      <a href="">Salads</a>
-      <a href="">Drinks</a>
-      <a href="">Desserts</a>
-    </section>
+    <nav id="navlinks">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Order</a></li>
+        <li><a href="">Cart</a></li>
+      </ul>
+    </nav>
   </figure>
   <!--Specialty Pizza Drop Down -->
   <section class="pizza">
@@ -30,24 +29,112 @@
       <img id="cheese" src="/images/cheez.png"
       alt="Cheese" title="Cheese" />
       <p id="cc">Cheese Pizza</p>
+      <p id="cd">A delicious three-cheese blend pizza</p>
+      <button id="add1">Add to Order</button>
       <img id="deluxe" src="/images/deluxe.png"
       alt="Deluxe" title="Deluxe" />
       <p id="dc">Deluxe Pizza</p>
+      <p id="dd">A classic combination of pepperoni, sausage, mushrooms, onions, and green peppers</p>
+      <button id="add2">Add to Order</button>
       <img id="meat" src="/images/meat.png"
       alt="Meat Lover's" title="Meat Lover's" />
       <p id="mc">Meat Lover's</p>
+      <p id="md">A meaty pizza with pepperoni, sausage, ham, and bacon</p>
+      <button id="add3">Add to Order</button>
       <img id="bbq" src="/images/bbq.png"
       alt="BBQ" title="BBQ" />
       <p id="bc">BBQ Chicken</p>
+      <p id="bd">A blend of chicken, onions, and bacon with tangy BBQ sauce drizzled on top</p>
+      <section id="size2">
+        <input type="radio" id="sm2" name="buildsize1">
+        <label for="sm2">Small</label>
+        <input type="radio" id="me2" name="buildsize1">
+        <label for="me2">Medium</label>
+        <input type="radio" id="la2" name="buildsize1" checked=checked>
+        <label for="la2">Large</label>
+        <input type="radio" id="xl2" name="buildsize1">
+        <label for="xl2">XL</label>
+      </section>
+      <section id="size3">
+        <input type="radio" id="sm3" name="buildsize2">
+        <label for="sm3">Small</label>
+        <input type="radio" id="me3" name="buildsize2">
+        <label for="me3">Medium</label>
+        <input type="radio" id="la3" name="buildsize2" checked=checked>
+        <label for="la3">Large</label>
+        <input type="radio" id="xl3" name="buildsize2">
+        <label for="xl3">XL</label>
+      </section>
+      <section id="size4">
+        <input type="radio" id="sm4" name="buildsize4">
+        <label for="sm4">Small</label>
+        <input type="radio" id="me4" name="buildsize4">
+        <label for="me4">Medium</label>
+        <input type="radio" id="la4" name="buildsize4" checked=checked>
+        <label for="la4">Large</label>
+        <input type="radio" id="xl4" name="buildsize4">
+        <label for="xl4">XL</label>
+      </section>
+      <section id="size5">
+        <input type="radio" id="sm5" name="buildsize5">
+        <label for="sm5">Small</label>
+        <input type="radio" id="me5" name="buildsize5">
+        <label for="me5">Medium</label>
+        <input type="radio" id="la5" name="buildsize5" checked=checked>
+        <label for="la5">Large</label>
+        <input type="radio" id="xl5" name="buildsize5">
+        <label for="xl5">XL</label>
+      </section>
+      <button id="add4">Add to Order</button>
     </section>
     <!--Build your own drop down -->
     <button id="build">Build Your Own</button>
     <section class="builds">
       <img id="buildc" src="/images/build.png" />
-      <input type="radio" id="pep">
-      <label for="pep">Pepperoni</label>
-      <input type="radio" id="sos">
-      <label for="sos">Sausage</label>
+      <section id="size1">
+        <input type="radio" id="sm1" name="buildsize">
+        <label for="sm1">Small</label>
+        <input type="radio" id="me1" name="buildsize">
+        <label for="me1">Medium</label>
+        <input type="radio" id="la1" name="buildsize" checked=checked>
+        <label for="la1">Large</label>
+        <input type="radio" id="xl1" name="buildsize">
+        <label for="xl1">XL</label>
+      </section>
+      <section id="meat1">
+        <input type="checkbox" id="pep">
+        <label for="pep">Pepperoni</label>
+        <input type="checkbox" id="sos">
+        <label for="sos">Sausage</label>
+        <input type="checkbox" id="ham">
+        <label for="ham">Ham</label>
+        <input type="checkbox" id="bac">
+        <label for="bac">Bacon</label>
+      </section>
+      <section id="meat2">
+        <input type="checkbox" id="chk">
+        <label for="chk">Chicken</label>
+        <input type="checkbox" id="stk">
+        <label for="stk">Steak</label>
+        <input type="checkbox" id="msh">
+        <label for="msh">Mushroom</label>
+      </section>
+      <section id="veg1">
+        <input type="checkbox" id="grp">
+        <label for="grp">Green Pepper</label>
+        <input type="checkbox" id="oni">
+        <label for="oni">Onion</label>
+        <input type="checkbox" id="olv">
+        <label for="olv">Olive</label>
+      </section>
+      <section id="veg2">
+        <input type="checkbox" id="bnp">
+        <label for="bnp">Banana Pepper</label>
+        <input type="checkbox" id="tom">
+        <label for="tom">Tomato</label>
+        <input type="checkbox" id="pin">
+        <label for="pin">Pineapple</label>
+      </section>
     </section>
   </section>
   <script src="site.js"></script>

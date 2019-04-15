@@ -1,9 +1,4 @@
 'use strict';
-//listener for menu button
-var b=document.getElementsByClassName("dropcontent")[0];
-document.getElementById('dropdown').addEventListener("click", function(event) {
-b.classList.toggle("visible");
-})
 //listener for specialty pizza button
 var s=document.getElementsByClassName('pizzas')[0];
 document.getElementById('special').addEventListener("click", function(event) {

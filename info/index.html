@@ -1,2 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="screen.css" />
+  <title>Project Factor</title>
+</head>
+
+<main>
+  <header id="header">
+    <h1 id="headpage">Hanks Pizzaria</h1>
+    <figure class="container" id="branding">
+    <img src="./images/pizzalogo.png" />
+    </figure>
+
+    <nav id="navcontain">
+      <ul>
+
+        <li id="home"><a href="./index.html">Home</a></li>
+        <li id="pizza"><a href="./pizzas.html">Pizzas</a></li>
+        <li id="salads"><a href="./salads.html">Salads</a></li>
+        <li id="appetizers"><a href="./appetizers.html">Appetizers</a></li>
+        <li id="drinks"><a href="./drinks.html">Drinks</a></li>
+        <li id="deserts"><a href="./deserts.html">Deserts</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+<body>
+
+<section id="field">
+<form id="box">
+  <fieldset>
+    <ol id="content">
+
+        <li id="tab1">
+            <label for="tablink1">Summary</label>
+            <input class="" type="hidden" name="summary" id="summary" />
+        </li>
+
+        <li id="tab2">
+            <label for="username">Payments</label>
+            <input class="" type="hidden" name="payment" id="payment" />
+        </li>
+
+    <ol>
+  </fieldset>
+</form>
+
+<section id="summary_content">
+    Your order is this
+</section>
+
+<section id="payments_content">
+  <form id="payment_option" action="index.html" method="post">
+    <ol>
+
+              <li id="credit">
+                <label for="cardnumber">Credit Card</label>
+                <input class="" type="text" name="cardnumber" id="cardnumber" />
+              </li>
+
+              <li id="cardname">
+                <label for="newpassword">Name On Card</label>
+                <input class="" type="text" name="Name" id="newpassword" />
+              </li>
+
+              <li id="three">
+                <label for="email">Card Pin</label>
+                <input class="" type="password" name="pin" id="pin" placeholder="123" />
+              </li>
+
+            </ol>
+  </form>
+</section>
+
+</section>
+
+</body>
+<script src="site.js"></script>
+</main>
+</html>

@@ -78,8 +78,13 @@ header a:hover{
 
 /* Showcase */
 #showcase{
-  min-height:400px;
-  /*background:url('./images/hanklogo.png') no-repeat 0 -15px;*/
+  min-height:800px;
+  background:url('./images/hanklogo.png') no-repeat 0 -15px;
+  background-position: center;
   text-align:center;
   color:#ffffff;
+}
+
+#showcase h1{
+  padding-top: 700px;
 }

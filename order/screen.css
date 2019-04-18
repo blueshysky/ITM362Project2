@@ -10,6 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   background-color: white;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button::-moz-focus-inner {
@@ -19,30 +20,42 @@ button::-moz-focus-inner {
 h1 {
   font-size: 2.5em;
   color: #88001B;
+  padding-left: 1%;
 }
 
 /* Header Styles */
-#logo {
-  max-width: 100%;
+#header {
   background-color: #56A556;
+  width: 100%;
 }
 
-#fig {
-  display: flex;
-  flex-direction: column;
-  font: 1.2em "Keilla";
-  background-color: #56A556;
+#header img {
+  width: 40%;
 }
 
-#navlinks ul li{
-  display: inline;
-  padding: 10%;
+#navcontain ul li{
+  padding: 2%;
+  border-top: .225em solid #88001B;
+  border-right: .225em solid #88001B;
+  border-left: .225em solid #88001B;
 }
 
-#navlinks a {
+#navcontain a {
+  font-size: 1.25em;
+  color: white;
   text-decoration: none;
 }
 
+#navcontain a:hover {
+  color: #88001B;
+}
+
+#navcontain ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
 /* Body Style */
 #special {
   display: block;
@@ -226,8 +239,10 @@ clear: both;
 }
 .builds {
   display: none;
-  justify-content: left;
-  flex-wrap: wrap;
+}
+
+.builds section {
+  padding: 1% 0;
 }
 #buildc {
   max-width: 95%;
@@ -249,7 +264,11 @@ clear: both;
 #veg2 {
   order: 6;
 }
-
+#add5 {
+  order: 7;
+}
 .visible3 {
   display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
 }

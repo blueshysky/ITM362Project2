@@ -9,18 +9,18 @@
 </head>
 <!--BODY-->
 <body>
-  <figure id="fig">
-    <img id="logo" src="/order/images/hanklogo.png"
-    alt="Hank's Pizzaria Logo"
-    title="Hank's Pizzaria Logo" />
-    <nav id="navlinks">
+  <header id="header">
+    <figure class="container" id="branding">
+    <img src="/order/images/hanklogo.png" />
+    </figure>
+    <nav id="navcontain">
       <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="">Order</a></li>
-        <li><a href="">Cart</a></li>
+        <li id="home"><a href="../">Home</a></li>
+        <li id="pizza"><a href="">Order</a></li>
+        <li id="salads"><a href="">Cart</a></li>
       </ul>
     </nav>
-  </figure>
+  </header>
   <!--Specialty Pizza Drop Down -->
   <section class="pizza">
     <h1>Pizzas</h1>
@@ -143,6 +143,7 @@
         <input type="checkbox" id="pin">
         <label for="pin">Pineapple</label>
       </section>
+      <button id="add5">Add to Order</button>
     </section>
   </section>
   <script src="site.js"></script>

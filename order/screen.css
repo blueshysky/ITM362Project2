@@ -87,7 +87,7 @@ h1 {
 }
 
 .pizzas img {
-  max-width: 40%;
+  width: 40%;
 }
 
 .pizzas button {
@@ -136,21 +136,34 @@ h1 {
 #bd{
   order: 16;
 }
-#size2 {
+#size2a {
+  display: flex;
   order: 7;
-  padding-right: 20%;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size2{
+  display: inline;
 }
 #size2 input {
-  float: left;
+float: left;
 }
 #size2 label {
-  float: left;
+float: left;
 }
 #size2 label + input {
-  clear: both;
+clear: both;
+}
+#size3a {
+  display: flex;
+  order: 8;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 #size3 {
-  order: 8;
+  display: inline;
 }
 #size3 input {
   float: left;
@@ -161,9 +174,15 @@ h1 {
 #size3 label + input {
   clear: both;
 }
-#size4 {
+#size4a {
+  display: flex;
   order: 17;
-  padding-right: 20%;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size4 {
+  display: inline;
 }
 #size4 input {
   float: left;
@@ -174,8 +193,15 @@ h1 {
 #size4 label + input {
   clear: both;
 }
-#size5 {
+#size5a {
+  display: flex;
   order: 18;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size5 {
+  display: inline;
 }
 #size5 input {
   float: left;

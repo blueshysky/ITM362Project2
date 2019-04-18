@@ -23,6 +23,18 @@ h1 {
   padding-left: 1%;
 }
 
+h2 {
+  padding: 2% 0 0 1%;
+  font-size: 1.5em;
+  color: #88001B;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #88001B;
+  padding: 2% 0 0 2%;
+}
+
 /* Header Styles */
 #header {
   background-color: #56A556;
@@ -57,6 +69,17 @@ h1 {
   justify-content: space-around;
 }
 /* Body Style */
+.pizza button {
+  background-color: #88001B;
+  color:white;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+
+.pizza button:hover {
+  background-color: #B23939;
+}
+
 #special {
   display: block;
   width: 100%;
@@ -249,26 +272,38 @@ clear: both;
   padding: 0 0 0 2.5%;
   order: 1;
 }
-#size1 {
+#sizehead {
   order: 2;
 }
-#meat1 {
+#size1 {
   order: 3;
 }
-#meat2{
+#tophead {
   order: 4;
 }
-#veg1 {
+#meathead {
   order: 5;
 }
-#veg2 {
+#meat1 {
   order: 6;
 }
-#add5 {
+#meat2{
   order: 7;
+}
+#veghead {
+  order: 8;
+}
+#veg1 {
+  order: 9;
+}
+#veg2 {
+  order: 10;
+}
+#add5 {
+  order: 11;
+  width: 80%;
 }
 .visible3 {
   display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
+  flex-direction: column;
 }

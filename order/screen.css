@@ -275,8 +275,23 @@ clear: both;
 #sizehead {
   order: 2;
 }
-#size1 {
+#size1a {
+  display: flex;
   order: 3;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size1{
+  display: inline;
+}
+#size1 input {
+float: left;
+}
+#size1 label {
+float: left;
+}
+#size1 label + input {
+clear: both;
 }
 #tophead {
   order: 4;

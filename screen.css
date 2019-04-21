@@ -79,21 +79,23 @@ header a:hover {
 /* Showcase */
 #showcase {
   min-height: 46.666666666666664em;
-  background: url("./images/hanklogo.png") no-repeat 0 -1em;
-  background-position: center;
   text-align: center;
   line-height: 3.3333333333333335em;
   color: white;
 }
 
 #showcase h2 {
-  padding-top: 46.666666666666664em;
   color: #DA2121;
 }
 
 #showcase .copyright {
   color: #000000;
   font-weight: bold;
+}
+
+#showcase img {
+  width: 100%;
+  height: auto;
 }
 
 #showcase a.button {

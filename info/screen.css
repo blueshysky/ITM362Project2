@@ -10,38 +10,61 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.225em;
   font-family: helvetica, Arial, sans-serif;
-  background-color: #56A556;
+  background-color: white;
   height: 100%;
 }
 
 body{
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.225em;
   line-height:2.0;
   padding:0;
   margin:0;
-  background-color:#580303;
 }
 
+
+
 /*Module formating*/
+main header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #56A556;
+  padding-left: 1.250em;
+  align-content: center;
+}
 
 #navcontain ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  padding-right: .035em;
+  padding-right: 0.035em;
+  padding-left: 0.035em;
 }
 
 #navcontain ul li {
-  padding:  0 1.250em 0 1.250em;
+  align-self: center;
+  width: 100%;
+  padding:  0em 1.250em 0 1.250em;
   border-top: .225em solid #CCCCCC;
   border-right: .225em solid #333333;
   border-bottom: .225em solid #333333;
   border-left: .225em solid #CCCCCC;
 }
 
+#branding {
+  display: block;
+  width: 60%;
+}
+
+#branding img {
+  max-width: 100%;
+}
+
 /*Navigation Styling*/
 #navcontain ul li a {
-  color: #2F882F;
+  color: white;
 }
 
 #navcontain ul li :hover {
@@ -51,43 +74,76 @@ body{
 
 /*tab styling*/
 
+#field{
+  background-color: white;
+}
+
 #content li label {
   background-color: #EEEEEE;
   color: #333333;
-  padding: 2em 6em 2em 6em;
+  padding: 1em 4em 1em 4em;
   border-top: .225em solid #CCCCCC;
   border-right: .225em solid #333333;
   border-bottom: .225em solid #333333;
   border-left: .225em solid #CCCCCC;
 }
 
-#field{
-    background-color: #EEEEEE;
+/*content styling*/
+.tabflex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+}
+
+@media screen and (max-width: 350px) {
+  #content li label {
+    padding: 1em 2em 1em 2em;
+    border-top: .115em solid #CCCCCC;
+    border-right: .115em solid #333333;
+    border-bottom: .115em solid #333333;
+    border-left: .115em solid #CCCCCC;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .tabflex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 #box #content {
-  padding: 5em  3em  3em  3em;
-  display: flex;
-  flex-direction: row;
+  padding: 2em  1em  1em  1em;
 }
 
-#tab1 label:hover {
+#tab1 li, label:hover {
   cursor: pointer;
   color:#002A00;
   font-weight:bold;
 }
 
-#tab2 label:hover {
+#tab2 li, label:hover {
   cursor: pointer;
   color:#002A00;
   font-weight:bold;
 }
 
-/*Content revealing*/
-#summary_content {
-  display: none;
+/*Content styling*/
+
+.whitebackground {
+  background-color: white;
 }
 
-#payment_content {
+/*hiding content*/
+.hidden {
   display: none;
 }
+/*show content*/
+.show {
+ display: block;
+}
+
+/*content revealing*/

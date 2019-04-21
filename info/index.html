@@ -8,54 +8,47 @@
 </head>
 
 <main>
+
   <header id="header">
-    <h1 id="headpage">Hanks Pizzaria</h1>
-    <figure class="container" id="branding">
-    <img src="./images/pizzalogo.png" />
+    <figure id="branding">
+    <img src="./images/hanklogo.png" />
     </figure>
 
     <nav id="navcontain">
+
       <ul>
-
-        <li id="home"><a href="./index.html">Home</a></li>
-        <li id="pizza"><a href="./pizzas.html">Pizzas</a></li>
-        <li id="salads"><a href="./salads.html">Salads</a></li>
-        <li id="appetizers"><a href="./appetizers.html">Appetizers</a></li>
-        <li id="drinks"><a href="./drinks.html">Drinks</a></li>
-        <li id="deserts"><a href="./deserts.html">Deserts</a></li>
-
+        <li><a href="./index.html">Home</a></li>
+    		<li><a href="/order/index.html">Order</a></li>
+    		<li><a href="./info/index.html">Cart</a></li>
       </ul>
 
     </nav>
 
   </header>
 
-<body>
+<body id="centerbody">
 
 <section id="field">
 <form id="box">
-  <fieldset>
-    <ol id="content">
+    <ol class="tabflex" id="content">
 
-        <li id="tab1">
+        <li class="tabflex"id="tab1">
             <label for="tablink1">Summary</label>
-            <input class="" type="hidden" name="summary" id="summary" />
         </li>
 
-        <li id="tab2">
+        <li class="tabflex" id="tab2">
             <label for="username">Payments</label>
-            <input class="" type="hidden" name="payment" id="payment" />
         </li>
 
     <ol>
-  </fieldset>
 </form>
+</section>
 
-<section id="summary_content">
+<section class="whitebackground hidden" id="summary_content">
     Your order is this
 </section>
 
-<section id="payments_content">
+<section class="whitebackground " id="payments_content">
   <form id="payment_option" action="index.html" method="post">
     <ol>
 
@@ -65,20 +58,24 @@
               </li>
 
               <li id="cardname">
-                <label for="newpassword">Name On Card</label>
+                <label for="newpassword">Card Name</label>
                 <input class="" type="text" name="Name" id="newpassword" />
               </li>
 
-              <li id="three">
-                <label for="email">Card Pin</label>
+              <li id="pincontain">
+                <label for="email">CVV</label>
                 <input class="" type="password" name="pin" id="pin" placeholder="123" />
+              </li>
+
+              <li id="submitcontain">
+                <label for="submit">Submit</label>
+                <input class="" type="submit" name="submit" value="confirm" id="submit">
               </li>
 
             </ol>
   </form>
 </section>
 
-</section>
 
 </body>
 <script src="site.js"></script>

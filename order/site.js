@@ -61,6 +61,17 @@ var sm4 = document.getElementById('sm5');
 var me4 = document.getElementById('me5');
 var la4 = document.getElementById('la5');
 var xl4 = document.getElementById('xl5');
+//for loop that displays running order upon new page
+for(var i = 0; i < cart.length; i++){
+  document.getElementById('cartjs').innerHTML += cart[i].size;
+  if(cart[i].toppings == undefined){
+    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+  }else{
+      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+  }
+  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "<br>";
+}
 //listener for add to order button that adds specialty pizza to order
 document.getElementById('add1').addEventListener("click", function(event){
 if(sm1.checked == true){
@@ -71,6 +82,18 @@ if(sm1.checked == true){
     addToCart(lach);
 }if(xl1.checked == true){
     addToCart(xlch);
+}
+document.getElementById('cartjs').innerHTML = "";
+//for loop that displays running order on order page
+for(var i = 0; i < cart.length; i++){
+  document.getElementById('cartjs').innerHTML += cart[i].size;
+  if(cart[i].toppings == undefined){
+    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+  }else{
+      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+  }
+  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "<br>";
 }
 });
 document.getElementById('add2').addEventListener("click", function(event){
@@ -83,6 +106,18 @@ if(sm2.checked == true){
 }if(xl2.checked == true){
     addToCart(xldp);
 }
+document.getElementById('cartjs').innerHTML = "";
+//for loop that displays running order on order page
+for(var i = 0; i < cart.length; i++){
+  document.getElementById('cartjs').innerHTML += cart[i].size;
+  if(cart[i].toppings == undefined){
+    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+  }else{
+      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+  }
+  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "<br>";
+}
 });
 document.getElementById('add3').addEventListener("click", function(event){
 if(sm3.checked == true){
@@ -94,6 +129,18 @@ if(sm3.checked == true){
 }if(xl3.checked == true){
     addToCart(xlml);
 }
+document.getElementById('cartjs').innerHTML = "";
+//for loop that displays running order on order page
+for(var i = 0; i < cart.length; i++){
+  document.getElementById('cartjs').innerHTML += cart[i].size;
+  if(cart[i].toppings == undefined){
+    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+  }else{
+      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+  }
+  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "<br>";
+}
 });
 document.getElementById('add4').addEventListener("click", function(event){
 if(sm4.checked == true){
@@ -102,8 +149,20 @@ if(sm4.checked == true){
     addToCart(mebq);
 }if(la4.checked == true){
     addToCart(labq);
-}if(la4.checked == true){
+}if(xl4.checked == true){
     addToCart(xlbq);
+}
+document.getElementById('cartjs').innerHTML = "";
+//for loop that displays running order on order page
+for(var i = 0; i < cart.length; i++){
+  document.getElementById('cartjs').innerHTML += cart[i].size;
+  if(cart[i].toppings == undefined){
+    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+  }else{
+      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+  }
+  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "<br>";
 }
 });
 //declare variables for build your own radio buttons
@@ -138,8 +197,11 @@ var t12 = document.getElementById('pin');
 var topArray = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12];
 //listener to add custom built pizza to cart
 var toppings1 = "";
+var custompi = "";
 document.getElementById('add5').addEventListener("click", function(event){
 toppings1 = "";
+price = 0;
+document.getElementById('cartjs').innerHTML = "";
 //if statements to set price depending on size
 if(sm5.checked == true){
   size = "Small";
@@ -163,5 +225,19 @@ for(var i = 0; i < 12; i++){
   toppings1 += toppings.concat(topArray[i].dataset.name);
   price += 1.5;
   }
+}
+//calls function to add pizza object to cart
+var custompi = new buildPizza(size, toppings1, price);
+addToCart(custompi);
+//for loop that displays running order on order page
+for(var i = 0; i < cart.length; i++){
+  document.getElementById('cartjs').innerHTML += cart[i].size;
+  if(cart[i].toppings == undefined){
+    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+  }else{
+      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+  }
+  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "<br>";
 }
 });

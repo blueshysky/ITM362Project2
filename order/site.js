@@ -275,3 +275,7 @@ document.getElementById('clear').addEventListener("click", function(event){
   document.getElementById('cartjs').innerHTML = "";
   localStorage.clear();
 })
+//listener for go to checkout button that takes user to checkout page
+document.getElementById('pay').addEventListener("click", function(event){
+  location.href = "../info/index.html";
+})

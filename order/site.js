@@ -1,4 +1,5 @@
 'use strict';
+var totalprice = 0;
 //listener for specialty pizza button that expands gallery
 var s=document.getElementsByClassName('pizzas')[0];
 document.getElementById('special').addEventListener("click", function(event) {
@@ -63,14 +64,19 @@ var la4 = document.getElementById('la5');
 var xl4 = document.getElementById('xl5');
 //for loop that displays running order upon new page
 for(var i = 0; i < cart.length; i++){
-  document.getElementById('cartjs').innerHTML += cart[i].size;
+  document.getElementById('cartjs').innerHTML += i + 1 + ". " + cart[i].size + " ";
   if(cart[i].toppings == undefined){
-    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+    document.getElementById('cartjs').innerHTML += cart[i].pizza + " ";
   }else{
-      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+      document.getElementById('cartjs').innerHTML += cart[i].toppings + " ";
   }
-  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "$" + cart[i].price.toFixed(2);
   document.getElementById('cartjs').innerHTML += "<br>";
+  totalprice += cart[i].price;
+}
+//if statement that displays price for new page
+if(cart.length > 0){
+    document.getElementById('cartprice').innerHTML += "Total: $" + totalprice.toFixed(2);
 }
 //listener for add to order button that adds specialty pizza to order
 document.getElementById('add1').addEventListener("click", function(event){
@@ -84,17 +90,21 @@ if(sm1.checked == true){
     addToCart(xlch);
 }
 document.getElementById('cartjs').innerHTML = "";
+totalprice = 0;
 //for loop that displays running order on order page
 for(var i = 0; i < cart.length; i++){
-  document.getElementById('cartjs').innerHTML += cart[i].size;
+  document.getElementById('cartjs').innerHTML += i + 1 + ". " + cart[i].size + " ";
   if(cart[i].toppings == undefined){
-    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+    document.getElementById('cartjs').innerHTML += cart[i].pizza + " ";
   }else{
-      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+      document.getElementById('cartjs').innerHTML += cart[i].toppings + " ";
   }
-  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "$" + cart[i].price.toFixed(2);
   document.getElementById('cartjs').innerHTML += "<br>";
+  totalprice += cart[i].price;
 }
+document.getElementById('cartprice').innerHTML = "";
+document.getElementById('cartprice').innerHTML += "Total: $" + totalprice.toFixed(2);
 });
 document.getElementById('add2').addEventListener("click", function(event){
 if(sm2.checked == true){
@@ -107,17 +117,21 @@ if(sm2.checked == true){
     addToCart(xldp);
 }
 document.getElementById('cartjs').innerHTML = "";
+totalprice = 0;
 //for loop that displays running order on order page
 for(var i = 0; i < cart.length; i++){
-  document.getElementById('cartjs').innerHTML += cart[i].size;
+  document.getElementById('cartjs').innerHTML += i + 1 + ". " + cart[i].size + " ";
   if(cart[i].toppings == undefined){
-    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+    document.getElementById('cartjs').innerHTML += cart[i].pizza + " ";
   }else{
-      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+      document.getElementById('cartjs').innerHTML += cart[i].toppings + " ";
   }
-  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "$" + cart[i].price.toFixed(2);
   document.getElementById('cartjs').innerHTML += "<br>";
+  totalprice += cart[i].price;
 }
+document.getElementById('cartprice').innerHTML = "";
+document.getElementById('cartprice').innerHTML += "Total: $" + totalprice.toFixed(2);
 });
 document.getElementById('add3').addEventListener("click", function(event){
 if(sm3.checked == true){
@@ -130,17 +144,21 @@ if(sm3.checked == true){
     addToCart(xlml);
 }
 document.getElementById('cartjs').innerHTML = "";
+totalprice = 0;
 //for loop that displays running order on order page
 for(var i = 0; i < cart.length; i++){
-  document.getElementById('cartjs').innerHTML += cart[i].size;
+  document.getElementById('cartjs').innerHTML += i + 1 + ". " + cart[i].size + " ";
   if(cart[i].toppings == undefined){
-    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+    document.getElementById('cartjs').innerHTML += cart[i].pizza + " ";
   }else{
-      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+      document.getElementById('cartjs').innerHTML += cart[i].toppings + " ";
   }
-  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "$" + cart[i].price.toFixed(2);
   document.getElementById('cartjs').innerHTML += "<br>";
+  totalprice += cart[i].price;
 }
+document.getElementById('cartprice').innerHTML = "";
+document.getElementById('cartprice').innerHTML += "Total: $" + totalprice.toFixed(2);
 });
 document.getElementById('add4').addEventListener("click", function(event){
 if(sm4.checked == true){
@@ -153,17 +171,21 @@ if(sm4.checked == true){
     addToCart(xlbq);
 }
 document.getElementById('cartjs').innerHTML = "";
+totalprice = 0;
 //for loop that displays running order on order page
 for(var i = 0; i < cart.length; i++){
-  document.getElementById('cartjs').innerHTML += cart[i].size;
+  document.getElementById('cartjs').innerHTML += i + 1 + ". " + cart[i].size + " ";
   if(cart[i].toppings == undefined){
-    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+    document.getElementById('cartjs').innerHTML += cart[i].pizza + " ";
   }else{
-      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+      document.getElementById('cartjs').innerHTML += cart[i].toppings + " ";
   }
-  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "$" + cart[i].price.toFixed(2);
   document.getElementById('cartjs').innerHTML += "<br>";
+  totalprice += cart[i].price;
 }
+document.getElementById('cartprice').innerHTML = "";
+document.getElementById('cartprice').innerHTML += "Total: $" + totalprice.toFixed(2);
 });
 //declare variables for build your own radio buttons
 var sm5 = document.getElementById('sm1');
@@ -202,6 +224,7 @@ document.getElementById('add5').addEventListener("click", function(event){
 toppings1 = "";
 price = 0;
 document.getElementById('cartjs').innerHTML = "";
+totalprice = 0;
 //if statements to set price depending on size
 if(sm5.checked == true){
   size = "Small";
@@ -231,13 +254,24 @@ var custompi = new buildPizza(size, toppings1, price);
 addToCart(custompi);
 //for loop that displays running order on order page
 for(var i = 0; i < cart.length; i++){
-  document.getElementById('cartjs').innerHTML += cart[i].size;
+  document.getElementById('cartjs').innerHTML += i + 1 + ". " + cart[i].size + " ";
   if(cart[i].toppings == undefined){
-    document.getElementById('cartjs').innerHTML += cart[i].pizza;
+    document.getElementById('cartjs').innerHTML += cart[i].pizza + " ";
   }else{
-      document.getElementById('cartjs').innerHTML += cart[i].toppings;
+      document.getElementById('cartjs').innerHTML += cart[i].toppings + " ";
   }
-  document.getElementById('cartjs').innerHTML += cart[i].price;
+  document.getElementById('cartjs').innerHTML += "$" + cart[i].price.toFixed(2);
   document.getElementById('cartjs').innerHTML += "<br>";
+  totalprice += price;
 }
+document.getElementById('cartprice').innerHTML = "";
+document.getElementById('cartprice').innerHTML += "Total: $" + totalprice.toFixed(2);
 });
+//listener for clear cart button that clears localStorage
+document.getElementById('clear').addEventListener("click", function(event){
+  cart = [];
+  totalprice = 0;
+  document.getElementById('cartprice').innerHTML = "";
+  document.getElementById('cartjs').innerHTML = "";
+  localStorage.clear();
+})

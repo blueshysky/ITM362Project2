@@ -52,3 +52,30 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 });
+//get cart from other page
+var cartdata = window.localStorage.getItem("shop");
+var cart2 = JSON.parse(cartdata);
+if(cart2 == null){
+  cart2 = [];
+}
+var totalprice = 0;
+// for loop that displays the order
+for(var i = 0; i < cart2.length; i++){
+  document.getElementById('jscart').innerHTML += i + 1 + ". " + cart2[i].size + " ";
+  if(cart2[i].toppings == undefined){
+    document.getElementById('jscart').innerHTML += cart2[i].pizza + " ";
+  }else{
+      document.getElementById('jscart').innerHTML += cart2[i].toppings + " ";
+  }
+  document.getElementById('jscart').innerHTML += "$" + cart2[i].price.toFixed(2);
+  document.getElementById('jscart').innerHTML += "<br>";
+  totalprice += cart2[i].price;
+}
+
+//if statement that displays the price
+if(cart2.length > 0){
+    document.getElementById('jsprice').innerHTML += "Total: $" + totalprice.toFixed(2);
+    document.getElementById('jsprice2').innerHTML += "Total: $" + totalprice.toFixed(2);
+} else {
+    document.getElementById('jscart2').innerHTML = "Your cart is empty";
+}

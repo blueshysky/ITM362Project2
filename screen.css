@@ -6,24 +6,30 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-body{
+body .main {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height:2.0;
-  padding:0;
-  margin:0;
-  background-color:#024602;
+  font-size: 1em;
+  line-height: 4;
+  padding: 0;
+  margin: 0;
+  background-color: white;
 }
 
 /* Global */
-.container{
-  width:80%;
-  margin:auto;
-  overflow:hidden;
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.navClass > ul > li{
-  position:relative;
+header li {
+  float: left;
+  display: inline;
+  padding: 0 1.3333333333333333em 0 1.3333333333333333em;
+}
+
+.navClass > ul > li {
+  position: relative;
 }
 
 header ul {
@@ -31,55 +37,68 @@ header ul {
 }
 
 /* Header */
-header{
-  background:#580303;
-  color:#ffffff;
-  padding-top: 30px;
-  min-height:70px;
-  border-bottom:#350000 6px solid;
+header {
+  background: #56A556;
+  color: #002A00;
+  padding-top: 2em;
+  min-height: 4.666666666666667em;
+  border-bottom: #59912F 6px solid;
 }
 
-header a{
-	color:#ffffff;
-	text-decoration:none;
-	text-transform: uppercase;
-	font-size:16px;
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.0666666666666667em;
 }
 
-header li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
+header .highlight {
+  float: left;
+  font-size: 2.1333333333333333em;
 }
 
-header #branding{
-  float:left;
-  font-size:32px;
+header #branding h1 {
+  margin: 0;
 }
 
-header #branding h1{
-  margin:0;
+header nav {
+  float: right;
+  margin-top: 1.3333333333333333em;
 }
 
-header nav{
-  float:left;
-  margin-top:20px;
+header .highlight, header .current a {
+  color: #002A00;
+  font-weight: bold;
 }
 
-header .highlight, header .current a{
-  color:#2F882F;
-  font-weight:bold;
-}
-
-header a:hover{
-  color:#002A00;
-  font-weight:bold;
+header a:hover {
+  color: #002A00;
+  font-weight: bold;
 }
 
 /* Showcase */
-#showcase{
-  min-height:400px;
-  /*background:url('./images/hanklogo.png') no-repeat 0 -15px;*/
-  text-align:center;
-  color:#ffffff;
+#showcase {
+  min-height: 46.666666666666664em;
+  background: url("./images/hanklogo.png") no-repeat 0 -1em;
+  background-position: center;
+  text-align: center;
+  line-height: 3.3333333333333335em;
+  color: white;
+}
+
+#showcase h2 {
+  padding-top: 46.666666666666664em;
+  color: #DA2121;
+}
+
+#showcase .copyright {
+  color: #000000;
+  font-weight: bold;
+}
+
+#showcase a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  text-decoration: none;
+  color: initial;
 }

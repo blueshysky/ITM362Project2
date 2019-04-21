@@ -12,7 +12,7 @@ body{
   line-height:2.0;
   padding:0;
   margin:0;
-  background-color:#024602;
+  background-color:white;
 }
 
 /* Global */
@@ -32,11 +32,11 @@ header ul {
 
 /* Header */
 header{
-  background:#580303;
-  color:#ffffff;
+  background:#56A556;
+  color:#002A00;
   padding-top: 30px;
   min-height:70px;
-  border-bottom:#350000 6px solid;
+  border-bottom:#59912F 6px solid;
 }
 
 header a{
@@ -62,12 +62,12 @@ header #branding h1{
 }
 
 header nav{
-  float:left;
+  float:right;
   margin-top:20px;
 }
 
 header .highlight, header .current a{
-  color:#2F882F;
+  color:#002A00;
   font-weight:bold;
 }
 
@@ -82,9 +82,24 @@ header a:hover{
   background:url('./images/hanklogo.png') no-repeat 0 -15px;
   background-position: center;
   text-align:center;
-  color:#ffffff;
+  color:white;
 }
 
-#showcase h1{
+#showcase h2{
   padding-top: 700px;
+  color:#DA2121;
+}
+
+#showcase .copyright{
+  color:#000000;
+  font-weight:bold;
+}
+
+#showcase a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }

@@ -10,6 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   background-color: white;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button::-moz-focus-inner {
@@ -17,33 +18,68 @@ button::-moz-focus-inner {
 }
 
 h1 {
-  font: 2.5em "Keilla";
+  font-size: 2.5em;
+  color: #88001B;
+  padding-left: 1%;
+}
+
+h2 {
+  padding: 2% 0 0 1%;
+  font-size: 1.5em;
   color: #88001B;
 }
 
+h3 {
+  font-size: 1.25em;
+  color: #88001B;
+  padding: 2% 0 0 2%;
+}
+
 /* Header Styles */
-#logo {
-  max-width: 100%;
+#header {
   background-color: #56A556;
+  width: 100%;
 }
 
-#fig {
-  display: flex;
-  flex-direction: column;
-  font: 1.2em "Keilla";
-  background-color: #56A556;
+#header img {
+  width: 40%;
 }
 
-#navlinks ul li{
-  display: inline;
-  padding: 10%;
+#navcontain ul li{
+  padding: 2%;
+  border-top: .225em solid #88001B;
+  border-right: .225em solid #88001B;
+  border-left: .225em solid #88001B;
 }
 
-#navlinks a {
+#navcontain a {
+  font-size: 1.25em;
+  color: white;
   text-decoration: none;
 }
 
+#navcontain a:hover {
+  color: #88001B;
+}
+
+#navcontain ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
 /* Body Style */
+.pizza button {
+  background-color: #88001B;
+  color:white;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+
+.pizza button:hover {
+  background-color: #B23939;
+}
+
 #special {
   display: block;
   width: 100%;
@@ -87,7 +123,7 @@ h1 {
 }
 
 .pizzas img {
-  max-width: 40%;
+  width: 40%;
 }
 
 .pizzas button {
@@ -136,21 +172,34 @@ h1 {
 #bd{
   order: 16;
 }
-#size2 {
+#size2a {
+  display: flex;
   order: 7;
-  padding-right: 20%;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size2{
+  display: inline;
 }
 #size2 input {
-  float: left;
+float: left;
 }
 #size2 label {
-  float: left;
+float: left;
 }
 #size2 label + input {
-  clear: both;
+clear: both;
+}
+#size3a {
+  display: flex;
+  order: 8;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 #size3 {
-  order: 8;
+  display: inline;
 }
 #size3 input {
   float: left;
@@ -161,9 +210,15 @@ h1 {
 #size3 label + input {
   clear: both;
 }
-#size4 {
+#size4a {
+  display: flex;
   order: 17;
-  padding-right: 20%;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size4 {
+  display: inline;
 }
 #size4 input {
   float: left;
@@ -174,8 +229,15 @@ h1 {
 #size4 label + input {
   clear: both;
 }
-#size5 {
+#size5a {
+  display: flex;
   order: 18;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#size5 {
+  display: inline;
 }
 #size5 input {
   float: left;
@@ -200,30 +262,87 @@ h1 {
 }
 .builds {
   display: none;
-  justify-content: left;
-  flex-wrap: wrap;
+}
+
+.builds section {
+  padding: 1% 0;
 }
 #buildc {
   max-width: 95%;
   padding: 0 0 0 2.5%;
   order: 1;
 }
-#size1 {
+#sizehead {
   order: 2;
 }
-#meat1 {
+#size1a {
+  display: flex;
   order: 3;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-#meat2{
+#size1{
+  display: inline;
+}
+#size1 input {
+float: left;
+}
+#size1 label {
+float: left;
+}
+#size1 label + input {
+clear: both;
+}
+#tophead {
   order: 4;
 }
-#veg1 {
+#meathead {
   order: 5;
 }
-#veg2 {
+#meat1 {
   order: 6;
 }
-
+#meat2{
+  order: 7;
+}
+#veghead {
+  order: 8;
+}
+#veg1 {
+  order: 9;
+}
+#veg2 {
+  order: 10;
+}
+#add5 {
+  order: 11;
+  width: 80%;
+}
 .visible3 {
   display: flex;
+  flex-direction: column;
+}
+/* cart style */
+#carthtml {
+  padding: 1%;
+}
+
+#cartjs {
+  padding-bottom: 1%;
+}
+
+#clear {
+  background-color: #88001B;
+  color:white;
+  padding: 1% 2%;
+  cursor: pointer;
+  width: 40%;
+}
+
+#pay{
+  background-color: #88001B;
+  color:white;
+  padding: 1% 2%;
+  cursor: pointer;
+  width: 40%;
 }

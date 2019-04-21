@@ -9,133 +9,153 @@
 </head>
 <!--BODY-->
 <body>
-  <figure id="fig">
-    <img id="logo" src="/images/hanklogo.png"
-    alt="Hank's Pizzaria Logo"
-    title="Hank's Pizzaria Logo" />
-    <nav id="navlinks">
+  <header id="header">
+    <figure class="container" id="branding">
+    <img src="/order/images/hanklogo.png" />
+    </figure>
+    <nav id="navcontain">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Order</a></li>
-        <li><a href="">Cart</a></li>
+        <li id="home"><a href="../">Home</a></li>
+        <li id="pizza"><a href="">Order</a></li>
+        <li id="salads"><a href="../info/index.html">Cart</a></li>
       </ul>
     </nav>
-  </figure>
+  </header>
   <!--Specialty Pizza Drop Down -->
   <section class="pizza">
     <h1>Pizzas</h1>
     <button id="special">Specialty Pizzas</button>
     <section class="pizzas">
-      <img id="cheese" src="/images/cheez.png"
+      <img id="cheese" src="/order/images/cheez.png"
       alt="Cheese" title="Cheese" />
       <p id="cc">Cheese Pizza</p>
       <p id="cd">A delicious three-cheese blend pizza</p>
       <button id="add1">Add to Order</button>
-      <img id="deluxe" src="/images/deluxe.png"
+      <img id="deluxe" src="/order/images/deluxe.png"
       alt="Deluxe" title="Deluxe" />
       <p id="dc">Deluxe Pizza</p>
       <p id="dd">A classic combination of pepperoni, sausage, mushrooms, onions, and green peppers</p>
       <button id="add2">Add to Order</button>
-      <img id="meat" src="/images/meat.png"
+      <img id="meat" src="/order/images/meat.png"
       alt="Meat Lover's" title="Meat Lover's" />
       <p id="mc">Meat Lover's</p>
       <p id="md">A meaty pizza with pepperoni, sausage, ham, and bacon</p>
       <button id="add3">Add to Order</button>
-      <img id="bbq" src="/images/bbq.png"
+      <img id="bbq" src="/order/images/bbq.png"
       alt="BBQ" title="BBQ" />
       <p id="bc">BBQ Chicken</p>
       <p id="bd">A blend of chicken, onions, and bacon with tangy BBQ sauce drizzled on top</p>
-      <section id="size2">
-        <input type="radio" id="sm2" name="buildsize1">
-        <label for="sm2">Small</label>
-        <input type="radio" id="me2" name="buildsize1">
-        <label for="me2">Medium</label>
-        <input type="radio" id="la2" name="buildsize1" checked=checked>
-        <label for="la2">Large</label>
-        <input type="radio" id="xl2" name="buildsize1">
-        <label for="xl2">XL</label>
+      <section id="size2a">
+        <section id="size2">
+          <input type="radio" id="sm2" name="buildsize1">
+          <label for="sm2">Small - $6.99</label>
+          <input type="radio" id="me2" name="buildsize1">
+          <label for="me2">Medium - $8.99</label>
+          <input type="radio" id="la2" name="buildsize1" checked=checked>
+          <label for="la2">Large - $10.99</label>
+          <input type="radio" id="xl2" name="buildsize1">
+          <label for="xl2">XL - $12.99</label>
+        </section>
       </section>
-      <section id="size3">
-        <input type="radio" id="sm3" name="buildsize2">
-        <label for="sm3">Small</label>
-        <input type="radio" id="me3" name="buildsize2">
-        <label for="me3">Medium</label>
-        <input type="radio" id="la3" name="buildsize2" checked=checked>
-        <label for="la3">Large</label>
-        <input type="radio" id="xl3" name="buildsize2">
-        <label for="xl3">XL</label>
+      <section id="size3a">
+        <section id="size3">
+          <input type="radio" id="sm3" name="buildsize2">
+          <label for="sm3">Small - $8.99</label>
+          <input type="radio" id="me3" name="buildsize2">
+          <label for="me3">Medium - $11.99</label>
+          <input type="radio" id="la3" name="buildsize2" checked=checked>
+          <label for="la3">Large - $15.99</label>
+          <input type="radio" id="xl3" name="buildsize2">
+          <label for="xl3">XL - $19.99</label>
+        </section>
       </section>
-      <section id="size4">
-        <input type="radio" id="sm4" name="buildsize4">
-        <label for="sm4">Small</label>
-        <input type="radio" id="me4" name="buildsize4">
-        <label for="me4">Medium</label>
-        <input type="radio" id="la4" name="buildsize4" checked=checked>
-        <label for="la4">Large</label>
-        <input type="radio" id="xl4" name="buildsize4">
-        <label for="xl4">XL</label>
+      <section id="size4a">
+        <section id="size4">
+          <input type="radio" id="sm4" name="buildsize4">
+          <label for="sm4">Small - $8.99</label>
+          <input type="radio" id="me4" name="buildsize4">
+          <label for="me4">Medium - $11.99</label>
+          <input type="radio" id="la4" name="buildsize4" checked=checked>
+          <label for="la4">Large - $15.99</label>
+          <input type="radio" id="xl4" name="buildsize4">
+          <label for="xl4">XL - $19.99</label>
+        </section>
       </section>
-      <section id="size5">
-        <input type="radio" id="sm5" name="buildsize5">
-        <label for="sm5">Small</label>
-        <input type="radio" id="me5" name="buildsize5">
-        <label for="me5">Medium</label>
-        <input type="radio" id="la5" name="buildsize5" checked=checked>
-        <label for="la5">Large</label>
-        <input type="radio" id="xl5" name="buildsize5">
-        <label for="xl5">XL</label>
+      <section id="size5a">
+        <section id="size5">
+          <input type="radio" id="sm5" name="buildsize5">
+          <label for="sm5">Small - $8.99</label>
+          <input type="radio" id="me5" name="buildsize5">
+          <label for="me5">Medium - $11.99</label>
+          <input type="radio" id="la5" name="buildsize5" checked=checked>
+          <label for="la5">Large - $15.99</label>
+          <input type="radio" id="xl5" name="buildsize5">
+          <label for="xl5">XL - $19.99</label>
+        </section>
       </section>
       <button id="add4">Add to Order</button>
     </section>
     <!--Build your own drop down -->
     <button id="build">Build Your Own</button>
     <section class="builds">
-      <img id="buildc" src="/images/build.png" />
-      <section id="size1">
-        <input type="radio" id="sm1" name="buildsize">
-        <label for="sm1">Small</label>
-        <input type="radio" id="me1" name="buildsize">
-        <label for="me1">Medium</label>
-        <input type="radio" id="la1" name="buildsize" checked=checked>
-        <label for="la1">Large</label>
-        <input type="radio" id="xl1" name="buildsize">
-        <label for="xl1">XL</label>
+      <img id="buildc" src="/order/images/build.png" />
+      <h2 id="sizehead">Size</h2>
+      <section id="size1a">
+        <section id="size1">
+          <input type="radio" id="sm1" name="buildsize">
+          <label for="sm1">Small - $6.99</label>
+          <input type="radio" id="me1" name="buildsize">
+          <label for="me1">Medium - $8.99</label>
+          <input type="radio" id="la1" name="buildsize" checked=checked>
+          <label for="la1">Large - $10.99</label>
+          <input type="radio" id="xl1" name="buildsize">
+          <label for="xl1">XL - $12.99</label>
+        </section>
       </section>
+      <h2 id="tophead">Toppings - $1.50 per topping</h2>
+      <h3 id="meathead">Meats</h3>
       <section id="meat1">
-        <input type="checkbox" id="pep">
+        <input type="checkbox" id="pep" data-name="Pepperoni ">
         <label for="pep">Pepperoni</label>
-        <input type="checkbox" id="sos">
+        <input type="checkbox" id="sos" data-name="Sausage ">
         <label for="sos">Sausage</label>
-        <input type="checkbox" id="ham">
+        <input type="checkbox" id="ham" data-name="Ham ">
         <label for="ham">Ham</label>
-        <input type="checkbox" id="bac">
-        <label for="bac">Bacon</label>
       </section>
       <section id="meat2">
-        <input type="checkbox" id="chk">
+        <input type="checkbox" id="bac" data-name="Bacon ">
+        <label for="bac">Bacon</label>
+        <input type="checkbox" id="chk" data-name="Chicken ">
         <label for="chk">Chicken</label>
-        <input type="checkbox" id="stk">
+        <input type="checkbox" id="stk" data-name="Steak ">
         <label for="stk">Steak</label>
-        <input type="checkbox" id="msh">
+      </section>
+      <h3 id="veghead">Veggies</h3>
+      <section id="veg1">
+        <input type="checkbox" id="grp" data-name="Green Pepper ">
+        <label for="grp">Green Pepper</label>
+        <input type="checkbox" id="oni" data-name="Onion ">
+        <label for="oni">Onion</label>
+        <input type="checkbox" id="msh" data-name="Mushroom ">
         <label for="msh">Mushroom</label>
       </section>
-      <section id="veg1">
-        <input type="checkbox" id="grp">
-        <label for="grp">Green Pepper</label>
-        <input type="checkbox" id="oni">
-        <label for="oni">Onion</label>
-        <input type="checkbox" id="olv">
-        <label for="olv">Olive</label>
-      </section>
       <section id="veg2">
-        <input type="checkbox" id="bnp">
+        <input type="checkbox" id="bnp" data-name="Banana Pepper ">
         <label for="bnp">Banana Pepper</label>
-        <input type="checkbox" id="tom">
+        <input type="checkbox" id="tom" data-name="Tomato ">
         <label for="tom">Tomato</label>
-        <input type="checkbox" id="pin">
+        <input type="checkbox" id="pin" data-name="Pineapple ">
         <label for="pin">Pineapple</label>
       </section>
+      <button id="add5">Add to Order</button>
     </section>
+  </section>
+  <h1>Your Order</h1>
+  <section id="carthtml">
+    <p id="cartjs"></p>
+    <p id="cartprice"></p>
+    <button id="pay">Go to Checkout</button>
+    <button id="clear">Clear Cart</button>
   </section>
   <script src="site.js"></script>
 </body>

@@ -322,3 +322,27 @@ clear: both;
   display: flex;
   flex-direction: column;
 }
+/* cart style */
+#carthtml {
+  padding: 1%;
+}
+
+#cartjs {
+  padding-bottom: 1%;
+}
+
+#clear {
+  background-color: #88001B;
+  color:white;
+  padding: 1% 2%;
+  cursor: pointer;
+  width: 40%;
+}
+
+#pay{
+  background-color: #88001B;
+  color:white;
+  padding: 1% 2%;
+  cursor: pointer;
+  width: 40%;
+}

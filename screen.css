@@ -22,6 +22,11 @@ body .main {
   overflow: hidden;
 }
 
+.container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 header li {
   float: left;
   display: inline;

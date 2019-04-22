@@ -359,3 +359,7 @@ clear: both;
   cursor: pointer;
   width: 40%;
 }
+
+#carthtml {
+  border: 0.1em solid black;
+}

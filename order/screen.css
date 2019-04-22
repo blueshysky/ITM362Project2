@@ -35,6 +35,19 @@ h3 {
   padding: 2% 0 0 2%;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 40%;
+  position: relative;
+  bottom: 0;
+  max-width: 100%;
+  height: 2.5em;
+}
+
 /* Header Styles */
 #header {
   background-color: #56A556;
@@ -345,4 +358,56 @@ clear: both;
   padding: 1% 2%;
   cursor: pointer;
   width: 40%;
+}
+
+#carthtml {
+  border: 0.1em solid black;
+}
+
+@media screen and (min-width: 768px){
+  #header img {
+    width: 30%;
+  }
+
+  .pizzas img {
+    width: 30%;
+  }
+
+  #build, #special {
+    padding: 3%;
+  }
+
+  #buildc {
+    width: 40%;
+    align-self: center;
+  }
+
+  #navcontain ul li{
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #header img {
+    width: 20%;
+  }
+
+  .pizzas img {
+    width: 30%;
+  }
+
+  #build, #special {
+    padding: 2%;
+  }
+
+  #buildc {
+    width: 40%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #header img {
+    width: 10%;
+  }
 }

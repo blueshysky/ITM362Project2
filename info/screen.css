@@ -97,6 +97,18 @@ main header {
   background-color: white;
 }
 
+/*hiding content*/
+.hidden {
+  display: none;
+}
+/*show content*/
+.show {
+ display: block;
+}
+
+.complete {
+  display: none;
+}
 @media screen and (max-width: 350px) {
   #content li label {
     padding: 1em 2em 1em 2em;
@@ -147,3 +159,18 @@ main header {
 }
 
 /*content revealing*/
+@media screen and (min-width: 768px){
+  #header img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px){
+  #header img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1200px){
+  #header img {
+    width: 20%;
+  }
+}

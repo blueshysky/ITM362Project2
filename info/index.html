@@ -31,7 +31,7 @@
 
   </main>
 
-
+<section id="incomplete">
 <section id="field">
 <form id="box">
     <ol class="tabflex" id="content">
@@ -56,12 +56,12 @@
 
 <section class="whitebackground " id="payments_content">
   <p id="jsprice2"></p>
-  <form id="payment_option" action="index.html" method="post">
+  <form id="payment_option" action="" method="get">
     <ol>
 
               <li id="credit">
                 <label for="cardnumber">Card Number</label>
-                <input class="" type="text" name="cardnumber" id="cardnumber" />
+                <input class="" type="text" name="cardnumber" id="cardnumber" required pattern="[0-9]{16}" maxlength="16"/>
               </li>
 
               <li id="cardname">
@@ -71,7 +71,7 @@
 
               <li id="pincontain">
                 <label for="pin">CVV</label>
-                <input class="" type="password" name="pin" id="pin" placeholder="123" />
+                <input class="" type="text" name="pin" id="pin" placeholder="123" required pattern="[0-9]{3}" maxlength="3"/>
               </li>
 
               <li id="submitcontain">
@@ -82,7 +82,10 @@
             </ol>
   </form>
 </section>
-
+</section>
+<section id="complete" class="complete">
+  <p id="thank">Thank you! Here's your order summary</p>
+</section>
 
 </body>
 <script src="site.js"></script>

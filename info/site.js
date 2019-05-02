@@ -79,3 +79,21 @@ if(cart2.length > 0){
 } else {
     document.getElementById('jscart2').innerHTML = "Your cart is empty";
 }
+ //submit button listener
+var confirm = document.getElementById('submit');
+var num = document.getElementById('cardnumber');
+var name = document.getElementById('Name');
+var cvv = document.getElementById('pin');
+var c = document.getElementById('complete');
+var i = document.getElementById('incomplete');
+var jscart = document.getElementById('jscart');
+confirm.addEventListener("click", function(event){
+  if(num.validity.valid && cvv.validity.valid){
+    event.preventDefault();
+    i.classList.toggle("hidden");
+    c.classList.toggle("show");
+    c.innerHTML += jscart.innerHTML;
+    c.innerHTML += jsprice.innerHTML;
+    window.localStorage.clear();
+  }
+})
